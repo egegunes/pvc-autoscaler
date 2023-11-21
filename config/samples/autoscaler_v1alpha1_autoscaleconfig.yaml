@@ -1,0 +1,12 @@
+apiVersion: autoscaler.percona.com/v1alpha1
+kind: AutoscaleConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: autoscaleconfig
+    app.kubernetes.io/instance: autoscaleconfig-sample
+    app.kubernetes.io/part-of: pvc-autoscaler
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: pvc-autoscaler
+  name: autoscaleconfig-sample
+spec:
+  foo: "ege"
